@@ -1,0 +1,39 @@
+
+# Python virtual environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Dataset images - avoid uploading large datasets
+data/raw/
+data/raw_clean/
+data/processed/
+data/processed_v2/
+data/processed_v3/
+
+# Local test images
+test_images/
+
+# Temporary files
+*.log
+.ipynb_checkpoints/
+
+# Keep project result images
+!results/
+!results/*.png
+# Diagnostic images and older model artifacts
+models/misclassified_validation/
+models/original_mobilenetv2_confusion_matrix.png
+models/*.keras
+!models/plantguard_mobilenetv2_v4.keras
